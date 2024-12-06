@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Florence</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous" defer></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js" defer></script>
+</head>
+<body>
+    <header>
+    
+        <a href="#" class="logo">Florence </a>
+
+        <ul>
+            <li>
+                <a href="#home" class="active">Home</a>
+            </li>
+            <li>
+                <a href="#sobre">Sobre</a>
+            </li>
+            <li>
+                <a href="#loja">Loja</a>
+            </li>
+            <li>
+                <a href="#opine">Opine</a>
+            </li>
+        </ul>
+
+        <i class="bi bi-bag-heart-fill" id="cart-icon"></i>
+        
+        <div class="cart">
+            <h2 class="cart-title">Seu Carrinho</h2>
+            <div class="cart-content">
+
+                <div class="cart-box">
+                    <img width="100px" src="pink-white-rose.jpg" alt="" class="cart-img">
+                    <div class="detail-box">
+                        <div class="cart-product-title">Rosas</div>
+                        <div class="cart-price">$30</div>
+                        <input type="number" value="1" class="cart-quant">
+                    </div>
+
+                    <button type="button" class="bi bi-trash" id="cart-remove"></button>
+
+                </div>
+
+            </div>
+
+            <div class="total">
+                <div class="total-title">Total</div>
+                <div class="total-price">$0</div>
+            </div>
+
+            <button type="button" class="btn-buy">Finalizar compra</button>
+        
+            <i class="bi bi-x" id="close-cart"></i> 
+        </div>
+
+    </header>
+
+    <section class="home" id="home">
+        
+        <div class="content">
+            <h3>Flores Naturais</h3>
+            <span>Flores que encantam, aromas que inspiram!</span>
+            <a href="#loja" class="btn" >Compre agora</a>
+        </div>
+    </section>
+
+    <section class="sobre" id="sobre">
+        <h1 class="head" > <span> Sobre </span> Nós</h1>
+        <div class="row">
+            <div class="video-container">
+                <video src="videoplayback.mp4" loop autoplay muted></video>
+                <h3>Melhores vendedores de flores</h3>
+            </div>
+
+            <div class="content">
+                <h3>Quem somos?</h3>
+                <p>Nosso grupo é formado por  Thaíssa, Ana Julia Melo, Jessica, Ana Júlia Souza, Sophia, Karine e Tiago estudamos no         instituto federal de São Paulo campus Cubatão, e realizamos um site sobre floricultura pois além de ser um interesse geral do grupo, também é um tema fácil e bonito de se trabalhar. 
+                    Somos 7 estudantes muito dedicados, esforçados e sempre gostamos 
+                    de mostrar nosso melhor independente da dificuldade. Nesse site tentamos mostrar todos nossos conhecimentos adquiridos nas aulas de Pratica de laboratório, onde aprendemos estruturas como html, CSS e javascript. 
+                    Este site foi uma oportunidade muito interessante de aprendermos a usar os conhecimentos de forma prática e também foi muito importante pois adquirimos outros conceitos que não foram passados em aula. 
+                    Gostamos muito de realizá-lo pois além de aprendermos coisas novas, colocamos muito da nossa criatividade em prática e aprendemos a lidar um com outro, dividir tarefas e o mais importante a ter responsabilidade e comprometimento. 
+                    <strong>Aqui temos alguns motivos para nos <span>escolher: </span></strong></p>
+            </div>
+        </div>
+    </section>
+    
+    <section class="icons-container" id="motivos">
+
+
+        <div>
+            <img src="entrega-gratis.png" alt="">
+            <div class="info">
+                <h3>Frete grátis</h3>
+                <span>para todo o país</span>
+            </div>
+        </div>
+
+        <div>
+            <img width="100px" src="dinheiro-de-volta.png" alt="">
+            <div class="info">
+                <h3>Seu dinhero volta</h3>
+                <span>cashback de ate 25% </span>
+            </div>
+        </div>
+        
+        <div>
+            <img src="voucher-de-presente.png" alt="">
+            <div class="info">
+                <h3>Ofertas e cupons</h3>
+                <span>toda semana</span>
+            </div>
+        </div>
+        
+        <div>
+            <img src="cartoes-de-credito.png" alt="">
+            <div class="info">
+                <h3>Pagamento seguro</h3>
+                <span>informações restritas</span>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="tabela">
+        <h1 class="tabela-title"><span>Tabela de preços</span></h1>
+    </section>
+
+    <section class="shop-container" id="loja">
+        <h1 class="section-tittle"><span>Produtos</span></h1>
+        <div class="container shop-content">
+            <div class="product-box ">
+                <img src="pink-white-rose2.png" alt="" class="product-img">
+                <h2 class="product-title">Vaso de Rosas</h2>
+                <span class="price">$45</span>
+                <i class="bi bi-bag-heart-fill" id="icon"></i>
+            </div>
+
+            <div class="product-box ">
+                <img src="amarela.png" alt="" class="product-img">
+                <h2 class="product-title">Vaso de Rosas Amarelas</h2>
+                <span class="price">$80</span>
+                <i class="bi bi-bag-heart-fill" id="icon"></i>
+            </div>
+
+            <div class="product-box ">
+                <img src="vaso de rosas.png" alt="" class="product-img">
+                <h2 class="product-title">Vaso de Rosas</h2>
+                <span class="price">$95</span>
+                <i class="bi bi-bag-heart-fill" id="icon"></i>
+            </div>
+
+            <div class="product-box ">
+                <img src="violetas2.png" alt="" class="product-img">
+                <h2 class="product-title">Vaso de Violetas</h2>
+                <span class="price">$60</span>
+                <i class="bi bi-bag-heart-fill" id="icon"></i>
+            </div>
+
+            <div class="product-box ">
+                <img src="girassol rosa2.png" alt="" class="product-img">
+                <h2 class="product-title">Vaso de Gérbera</h2>
+                <span class="price">$55</span>
+                <i class="bi bi-bag-heart-fill" id="icon"></i>
+            </div>
+            
+            <div class="product-box ">
+                <img src="ranunculos.png" alt="" class="product-img">
+                <h2 class="product-title">Vaso de Ranúnculos</h2>
+                <span class="price">$50</span>
+                <i class="bi bi-bag-heart-fill" id="icon"></i>
+            </div>
+
+            <div class="product-box ">
+                <img src="buque de rosas brancas.png" alt="" class="product-img">
+                <h2 class="product-title">Rosas Brancas e íris</h2>
+                <span class="price">$195</span>
+                <i class="bi bi-bag-heart-fill" id="icon"></i>
+            </div>
+
+            <div class="product-box ">
+                <img src="buque de tulipas2.png" alt="" class="product-img">
+                <h2 class="product-title">Buquê de Tulipas</h2>
+                <span class="price">$170</span>
+                <i class="bi bi-bag-heart-fill" id="icon"></i>
+            </div>
+
+            <div class="product-box ">
+                <img src="buque de rosas2.png" alt="" class="product-img">
+                <h2 class="product-title">Buquê de Rosas Claras</h2>
+                <span class="price">$180</span>
+                <i class="bi bi-bag-heart-fill" id="icon"></i>
+            </div>
+
+            <div class="product-box ">
+                <img src="arranjo de peonias.png" alt="" class="product-img">
+                <h2 class="product-title">Arranjo de Peônias Artificiais</h2>
+                <span class="price">$45</span>
+                <i class="bi bi-bag-heart-fill" id="icon"></i>
+            </div>
+        </div>
+    </section>
+
+    <section class="opine" id="opine">
+        <h1 class="heading"> <span> Fale </span> conosco</h1>
+
+        <div class="row">
+
+            <form action="">
+                <input type="text" placeholder="Nome" class="box">
+                <input type="email" placeholder="Email" class="box">
+                <input type="number" placeholder="Que nota você daria para o nosso site?" class="box">
+                <textarea name="" class="box" placeholder="Deixe uma mensagem pra gente!" id="" cols="30" rows="10"></textarea>
+                <textarea name="" class="box" placeholder="O que você acha da nossa floricultura?" id="" cols="30" rows="10"></textarea>
+                <input type="submit" value="Enviar Mensagem" class="btn">
+            </form>
+
+            <div class="image">
+                <img src="Florist-pana.png" alt="">
+            </div>
+        </div>
+    </section>
+
+    <section class="footer">
+        <div class="box-container">
+            <div class="box">
+                <h3>Links rápidos</h3>
+                <a href="#" id="home">Home</a>
+                <a href="#" id="sobre">Sobre</a>
+                <a href="#" id="loja">Loja</a>
+                <a href="#" id="opine">Opine</a>
+            </div>
+
+            <div class="box">
+                <h3>Extra Links</h3>
+                <a href="#">Meu carrinho</a>
+                <a href="#">Login</a>
+                <a href="#">Cadastro</a>
+            </div>
+
+            <div class="box">
+                <h3>Contato</h3>
+                <a href="#">+55 11 98325-1057</a>
+                <a href="#">@aluno.ifsp.edu.br</a>
+                <a href="https://www.google.com/maps/place/Cubat%C3%A3o,+SP/@-23.8689374,-46.4094238,12z/data=!3m1!4b1!4m6!3m5!1s0x94ce10f2c21f7651:0xaa349e6a7195a8cc!8m2!3d-23.8918211!4d-46.4248391!16zL20vMDN5OGdw?entry=ttu&g_ep=EgoyMDI0MTEyNC4xIKXMDSoASAFQAw%3D%3D">Cubatão, SP - Brasil</a>
+            </div>
+
+            <div class="box">
+                <h3>Redes Sociais</h3>
+                <a href="https://www.instagram.com/ifspcubatao?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw%3D%3D">Instagram: @ifspcubatao</a>
+                <a href="https://www.facebook.com/ifspcubatao/?locale=pt_BRs">Facebook: IFSP - Campus Cubatão</a>
+            </div>
+        </div>
+
+        <h3 class="ib"> Criado por <span> Sophia Leal, Ana Julia Souza, Ana Julia Melo, Tiago Gois, Karine Melo, Thaissa Messias, Jéssica Silva</span> | Todos os Direitos Reservados.</h3>
+    </section>
+
+</body>
+</html>
