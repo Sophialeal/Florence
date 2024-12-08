@@ -191,5 +191,5 @@ loginBtn.addEventListener("click", (e) => {
 
 function toggleMenu() {
   var menu = document.getElementById('menu');
-  menu.classList.toggle('open'); // Alterna a classe 'open' para mostrar/ocultar o menu
+  menu.classList.toggle('open'); 
 }
