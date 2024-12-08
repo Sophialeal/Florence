@@ -828,6 +828,11 @@ caption  {
     border-top: 0.3rem solid rgba(0, 0, 0,.1);
 }
 
+.qrcode
+{
+    width: 40%;
+}
+
 .ib span
 {
     color: var(---pink);
